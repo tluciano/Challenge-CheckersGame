@@ -1,0 +1,67 @@
+ #gameBoard table{
+    border: 5px solid #C1A393;
+}
+#gameBoard table td{
+    border: 1px solid #CCCCCC;
+    height: 70px;
+    width: 70px;
+}
+.gameBoardInvert{
+    background: #C1B69C;
+}
+#gameBoard table td div.black,
+#gameBoard table td div.white{
+    color:#fff;
+    width:80%;
+    height:80%;
+    margin: 0 auto;
+    line-height:300px;
+    vertical-align:middle;
+    text-align:center;
+    font-size:30px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    -webkit-box-shadow: 4px 4px 6px -2px #32325D;
+    -moz-box-shadow:    4px 4px 6px -2px #32325D;
+    box-shadow:         4px 4px 6px -2px #32325D;
+}
+#gameBoard table td div.black{
+    background: #000000;
+}
+#gameBoard table td div.white{
+    background: #ffffff;
+}
+.active{
+    -webkit-box-shadow: 10px 12px 7px -1px #000000 !important;
+    -moz-box-shadow:    10px 12px 7px -1px #000000 !important;
+    box-shadow:         10px 12px 7px -1px #000000 !important;
+    right: 10px;
+    bottom: 10px;
+    position: relative;
+}
+.over {
+  border: 2px dashed #000;
+}
+.dark{
+    background: #C1A393;
+}
+.highlighter{
+    background: #00FFFF;
+    cursor:  pointer;
+}
+#contentTurn{
+    background: none repeat scroll 0 0 #999999;
+    float: right;
+    font-family: verdana;
+    font-size: 12px;
+    height: 29px;
+    padding: 5px;
+    position: relative;
+    width: 145px;
+}
+#contentTurn #turn{
+    font-weight: bold;
+}
