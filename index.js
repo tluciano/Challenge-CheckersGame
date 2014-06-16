@@ -191,7 +191,6 @@ function setMove(possibilities){
 function possibility(element){
 
     possibilityPiece = calcPossibility(element, false);
-    // log(possibilityPiece);
 
 }
 
@@ -205,19 +204,14 @@ function calcPossibility(element, actionEat){
 
                 var x = position[0];
                 var y = position[1];
-                // console.log("laco"+i+" x é: "+x);
-                // console.log("laco"+i+" y é: "+y);
 
                 if(i < 2){
                     x = (type[0] == "black") ? parseInt(x, 10) + (i + 1) : parseInt(x, 10) - (i + 1);
                     y = (type[0] == "black") ? parseInt(y, 10) + (i + 1) : parseInt(y, 10) - (i + 1);
-                    // console.log("laco"+i+" x apos alterado: "+x);
-                    // console.log("laco"+i+" y apos alterado: "+y);
+
                 }else if(i > 2){
                     x = (type[0] == "black") ? parseInt(x, 10) + (i -2) : parseInt(x, 10) - (i -2);
                     y = (type[0] == "black") ? parseInt(y, 10) - (i - 2) : parseInt(y, 10) + (i - 2);
-                    // console.log("laco"+i+" x apos alterado: "+x);
-                    // console.log("laco"+i+" y apos alterado: "+y);
                 }
 
                 if(i != 2){
@@ -389,7 +383,6 @@ function validNear(origin, possibilities){
             }
 
     }
-// console.log(" proximos: "+near+" --- distantes: "+far);
 
     if(near.length == 2){
         return near;
@@ -443,7 +436,7 @@ function validPrevious(element){
 
             var element1 = validPiece(document.getElementsByName(x+"_"+y1)[0]);
             var element2 = validPiece(document.getElementsByName(x+"_"+y2)[0]);
-// log("element1: "+element1+" element2: "+element2);
+
             if(!element1 && !element2){
                 return true;
             }else if(element1 == colorPiece || element2 == colorPiece){
@@ -464,9 +457,3 @@ function validPrevious(element){
 
 }
 
-// this fuction to log output
-function log(output){
-    console.log(" Inicio ----------------------->>> \n");
-    console.log(output);
-    console.log("\n <<<------------------------ Fim!!! \n");
-}
