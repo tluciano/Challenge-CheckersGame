@@ -3,7 +3,7 @@
 ## CheckersGame
 
 ## Demo
-  * [Link](http://checkersgame.thiagoluciano.com.br/)
+  * [Link](http://game.thiagoluciano.com.br/)
 
 
 
